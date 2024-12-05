@@ -1,0 +1,30 @@
+<!-- edit_user.html -->
+{% extends "base.html" %}
+
+{% block title %}Edit User{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Edit User</h2>
+        
+        <form method="POST">
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" value="{{ user[2] }}" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" value="{{ user[3] }}" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Update User</button>
+        </form>
+        
+        <a href="{{ url_for('admin_dashboard') }}" class="btn btn-secondary mt-3">Back to Admin Dashboard</a>
+    </div>
+{% endblock %}

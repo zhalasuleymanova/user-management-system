@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.card h2 {
+    color: #007bff;
+    font-size: 24px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
